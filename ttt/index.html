@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tools, Text, and Terminals</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="/reveal/css/reveal.css">
+		<link rel="stylesheet" href="/reveal/css/theme/black.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/reveal/lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal/css/print/pdf.css' : '/reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="/reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Tools, Text, and Terminals</h1>
+				</section>
+				<section>
+					<section>
+						<p>But first..</p>
+					</section>
+					<section>
+						<p>Does everyone have:</p>
+						<ul>
+							<li>A GitHub repo</li>
+							<li>Membership to the CodeGuild organistion on GitHub</li>
+							<li>A Heroku app</li>
+							<li>Their GitHub repo connected to their Heroku app</li>
+							<li>A *.codeguild.co domain</li>
+							<li>Their blog sitting at that domain</li>
+						</ul>
+					</section>
+					<section>
+						<p>Activity: Write a Post</p>
+						<p>Wirte a new blog post about GitHub, Heroku, and the process you went through to get thigns up and running</p>
+						<p>If you had to do this again, what would you need to remind yourself about?</p>
+					</section>
+				</section>
+				<section>
+					<h2>Let's Tool Up</h2>
+					<p>Playing with new tools is one of the most fun things to do as a software engineer</p>
+				</section>
+				<section>
+					<p>We spoke yesterday about problem solving by being lazy, finding a tool that does a task you thought you were going to have to do is one of the best lazy things you can do</p>
+				</section>
+				<section>
+					<p>There are some very standard types of tools that we're going to cover in this session. These are the bread and butter tools that you'll use everyday and for hours and hours</p>
+				</section>
+				<section>
+					<p>There are also very task specific tools that we won't look at. You'll just have to remember to be lazy the next time you start a task. Ask yourself "is there a tool out there that would do this for me?"</p>
+				</section>
+				<section>
+					<section>
+						<h2>Virtual Machines</h2>
+						<p>Machines inside machines</p>
+					</section>
+					<section>
+						<p>These are excellent tools:</p>
+						<ul>
+							<li>Separation of dependencies</li>
+							<li>They're disposable</li>
+							<li>They protect you</li>
+						</ul>
+					</section>
+					<section>
+						<p>We're using VirtualBox to run our virtual machines</p>
+						<p>On the VP computers, it's already installed</p>
+						<p>On your own computers you'll have to download it (it's free)</p>
+					</section>
+					<section>
+						<p>Activity: Get Ubuntu running in a VirtualBox</p>
+						<p>Ubuntu is a flavour of Linux</p>
+						<p>We'll have to share some USB drives</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Operating Systems</h2>
+						<p>Just a quick aside...</p>
+					</section>
+					<section>
+						<p>The main operating system types you'll care about as a programmer are Windows and Unix</p>
+					</section>
+					<section>
+						<p>Unix is the basis of the Linux operating system (which Debian is a flavour of) and Apple's OS X. It's open source and very programmer friendly. You'll almost certainly need to know how to use some form of Unix</p>
+					</section>
+					<section>
+						<p>Windows is its own beast, you probably won't need to know Windows as a software engineer but it won't hurt you</p>
+					</section>
+					<section>
+						<p>Your operating system is a tool that you pick, just like any other tool. You'll want to think about which one you use and I would recommend using lots of them to see which ones you like</p>
+					</section>
+					<section>
+						<p>This week we'll be using Ubuntu, it's a very popular choice. Try others (especially inside VirtualMachines where thigns can't go wrong)</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Editing Text</h2>
+					</section>
+					<section>
+						<p>Programming is writing instructions to a computer in a language it understands</p>
+						<p>As a software engineer you'll spend a lot of time typing text in a very specific way</p>
+						<p>Computers are not very forgiving if you make a spelling or grammar mistake</p>
+					</section>
+					<section>
+						<p>For these reasons, the tool you pick to write your software is very important</p>
+						<p>Software engineers have made and lost life-long friends over choices in text editor</p>
+					</section>
+					<section>
+						<p>Activity: Pick a Text Editor</p>
+						<p>Ubuntu comes with a few</p>
+						<p>But there are thousnds more to download</p>
+						<p>Like the command line? Try Vim</p>
+						<p>Like lots of buttons? Try Ecplise (espcially you Java people)</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Terminals</h2>
+						<p>Making you look like hackers</p>
+					</section>
+					<section>
+						<p>I wanted to talk about a suite of tools that you may not have come across yet but that are so good at what they do they are used ubiquitously.</p>
+					</section>
+					<section>
+						<p>It's the suite of software that comes bundled in with a Unix Terminal.</p>
+					</section>
+					<section>
+						<p>Here are some:</p>
+						<pre><code class="hljs" data-trim>
+ls, cd, cp, rm, mv, grep, ps, xargs, tee,
+find, sed, ssh, scp, rsync, chmod, dig,
+ping, sudo, su, less, more, tail, cat, echo,
+curl
+
+stdout, stdin, stderr, redirection, pipes, bash
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<p>Activity: Write a Blog Post</p>
+					<p>Really like/hate Ubuntu?</p>
+					<p>Have a burning desire to share the wonders of gedit?</p>
+					<p>Need to remember how to use ping?</p>
+				</section>
+			</div>
+		</div>
+		<script src="/reveal/lib/js/head.min.js"></script>
+		<script src="/reveal/js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '/reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
